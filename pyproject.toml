@@ -1,0 +1,17 @@
+[build-system]
+requires = ['hatchling']
+build-backend = 'hatchling.build'
+
+
+[project]
+name = 'advisories'
+version = '1'
+dependencies = [
+    'pylint',
+    'pytest',
+    'feedparser'
+]
+
+
+[project.scripts]
+advisories = 'advisories:run'
